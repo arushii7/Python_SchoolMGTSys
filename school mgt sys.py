@@ -1,6 +1,13 @@
 import mysql.connector
 from datetime import datetime
 
+''' 
+Before running this program, create a MySQL database named 'school_management_system' and define the necessary tables with the columns:
+students (student_id, first_name, last_name, date_of_birth, gender, class)
+teachers (teacher_id, first_name, last_name, date_of_birth, gender, subject_taught)
+'''
+
+
 def connect_to_database():
     return mysql.connector.connect(host="localhost",user="root",password="mysql",database="school_management_system")
 
