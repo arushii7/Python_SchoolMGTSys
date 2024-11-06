@@ -1,0 +1,20 @@
+create database school_management_system;
+use school_management_system;
+
+create table students (
+    student_id int primary key,
+    first_name varchar(50),
+    last_name varchar(50),
+    date_of_birth date,
+    gender varchar(10),
+    class varchar(20)
+);
+
+create table teachers (
+    teacher_id int primary key auto_increment,
+    first_name varchar(50),
+    last_name varchar(50),
+    date_of_birth date,
+    gender varchar(10),
+    subject_taught varchar(50)
+);
